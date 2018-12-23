@@ -7,10 +7,14 @@ class Experiences extends Component {
     experiences: PropTypes.array.isRequired,
   }
 
+  t(id) {
+    return this.context.intl.formatMessage({id: id});
+  }
+
   render() {
     return (
       <div>
-      <h2>Experiences</h2>
+      <h2>{this.t('experience.header')}</h2>
         {
           this.props.experiences.map((experience, i) => (
             <div key={`experience-${i}`}>
@@ -23,5 +27,5 @@ class Experiences extends Component {
     );
   }
 }
-
+Experiences.contextTypes ={ intl: PropTypes.object.isRequired };
 export default Experiences;

@@ -7,10 +7,14 @@ class Projects extends Component {
     projects: PropTypes.array.isRequired,
   }
 
+  t(id) {
+    return this.context.intl.formatMessage({id: id});
+  }
+
   render() {
     return (
       <div>
-        <h2>Other Projects</h2>
+      <h2>{this.t('project.header')}</h2>
         {
           this.props.projects.map((project, i) => (
             <div key={`project-${i}`}>
@@ -23,5 +27,6 @@ class Projects extends Component {
     );
   }
 }
+Projects.contextTypes ={ intl: PropTypes.object.isRequired };
 
 export default Projects;
