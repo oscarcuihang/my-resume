@@ -1,0 +1,6 @@
+{
+  "app.resumeURL": "https://raw.githubusercontent.com/oscarcuihang/resume/master/resumeEN.json",
+  "education.header": "Educations",
+  "experience.header": "Experiences",
+  "project.header": "Other Projects"
+}
