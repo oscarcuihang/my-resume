@@ -12,7 +12,6 @@ class Educations extends Component {
     return (
       <div>
         <h2>{this.t('education.header')}</h2>
-        
       </div>
     );
   }
