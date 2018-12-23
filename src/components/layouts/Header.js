@@ -22,10 +22,6 @@ class AppHeader extends Component {
         <Row>
           <Col span={12}>
             <h1> {this.props.contacts.name} </h1>
-            <h2> ASDASDASDS </h2>
-          </Col>
-          <Col span={12}>
-            <h3>11111111111</h3>
           </Col>
         </Row>
       </Header>

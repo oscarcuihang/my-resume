@@ -17,22 +17,21 @@ class AppContent extends Component {
     if (this.props.myData.educations.length < 1) {
       return null;
     }
-    return 'Educations';
+    return (<Education educations={this.props.myData.educations} />);
   }
 
   renderProjectSection() {
     if (this.props.myData.otherProjects.length < 1) {
       return null;
     }
-    return 'Projects';
-
+    return (<Projects projects={this.props.myData.otherProjects} />);
   }
 
   renderExperienceSection() {
     if (this.props.myData.professionalExperiences.length < 1) {
       return null;
     }
-    return 'Experiences';
+    return (<Experiences experiences={this.props.myData.professionalExperiences} />);
   }
 
   render() {
